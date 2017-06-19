@@ -1,9 +1,16 @@
-@import 'setup';
-// @import 'typography';
 
-$darkGrey: #303030;
-$lightGrey: #7c7c7c;
+@import './partials/setup';
+@import './partials/typography';
+@import './partials/header';
+@import './partials/about';
+@import './partials/skills';
+@import './partials/portfolio';
 
+
+// GENERAL STYLING ////////////////////////////
+* {
+	transition: 0.3s all ease;
+}
 html {
 	font-size: 14px;
 }
@@ -11,154 +18,55 @@ a {
 	text-decoration: none;
 	color: $darkGrey;
 }
+img {
+	max-width: 100%;
+}
 .wrapper {
+	width: 90%;
 	max-width: 1000px;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 section {
-	margin: 100px 0;
+	padding: 100px 0;
 }
 ul {
 	list-style-type: none;
 	margin: 0;
 }
-h1 {
-	margin: 0;
-	color: $darkGrey;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 200;
-}
-h2 {
-	margin: 0;
-	color: $darkGrey;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 500;
-}
-h3 {
-	margin: 0;
-	color: $darkGrey;
-	font-family: 'Poppins', sans-serif;
-}
-p {
-	margin: 0;
-	color: $lightGrey;
-	font-family: 'Poppins', sans-serif;
-}
-.header {
-	background: url(../assets/hero.jpg);
-	background-size: cover;
-	height: 100vh;
-	nav ul {
-		display: flex;
-		justify-content: space-between;
-		margin: 0;
-		padding: 20px 0;
-		li.logo {
-			flex-grow: 1;
-			padding: 0;
-		}
-		li {
-			padding: 0 15px;
-		}
-	}
-}
+
 .subHeading {
 	max-width: 770px;
 	margin: 0 auto;
-	border: 2px solid blue;
 	text-align: center;
-
-}
-
-// ABOUT SECTION ////////////////////////////
-.aboutContainer {
-	display: flex;
-	justify-content: space-between;
-}
-.aboutText {
-	width: 65%;
-}
-
-.about-Highlights {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border: 2px solid red;
-	article {
-		width: 50%;
-		padding-right: 40px;
-	}
-}
-.about-img {
-	width: 30%;
-	align-items: center;
-}
-
-// SKILLS SECTION ////////////////////////////
-.skills-List {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	article {
-		width: 28%;
-		display: flex;
-		margin: 30px 0;
-	}
 }
 
 
-// PORTFOLIO SECTION ////////////////////////////
-.portfolio-Nav {
-	max-width: 700px;
-	margin: 0 auto;
-	ul {
-		display: flex;
-		justify-content: space-between;
-		padding: 0;
-		border: 2px solid red;
-		margin: 10px 0;
-		li {
-			padding: 0;
-			margin: 0;
-		}
-	}
-}
-.portfolio-examples {
-	display: flex; 
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	border: 2px solid green;
-	div {
-		width: 50%;
-		margin-top: 50px;
-		&:nth-of-type(2) {
-			margin-top: 150px;
-			text-align: right;
-		}
-		article {
-			div {
-				width: 65%;
-			}
-		}
-	}
-}
 
 // CONTACT SECTION ////////////////////////////
+.contactContainer {
+	padding: 100px 0;
+}
 .contact-Info {
-	display: flex;
-	justify-content: space-between;
-	article {
-		width: 50%;
-		text-align: left;
+	text-align: center;
+	margin: 20px 0;
+	i {
+		padding: 0 10px;
 	}
-	&:nth-of-type(1) {
-		flex-direction: column;
-		div {
-			flex-direction: row;
+	a {
+		transition: 0.3s all ease;
+		&:hover{
+			color: $green;
 		}
 	}
+	p {
+		margin-bottom: 5px;
+	}
+}
+
+.copyright {
+	background-image: url(../../public/assets/footer-bg.png);
+	text-align: center;
+	padding: 20px 0;
+	background-color: #ECECEC;
+	color: #333;
 }

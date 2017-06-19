@@ -2,200 +2,198 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Shannon Draper</title>
+	<link rel="icon" type="image/x-icon" href="public/assets/favico.png" />
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Poppins" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-	<section class="header">
-		<div class="headerContainer wrapper">
+	<header class="header">
+		<div class="headerContainer wrapper" id="home">
 			<nav>
 				<ul>
-					<li class="logo">LOGO</li>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li class="logo"><!-- <a href="#home"><img src="dev/assets/logo_wt.png" alt="Shannon Logo"></a> --></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
-			<div class="title">
-				<h1>HELLO</h1>
-				<button>ABOUT ME</button>
+			<div class="headerText">
+				<div class="title">
+					<h1>SHANNON DRAPER</h1>
+					<div class="titleBox"></div>
+				</div>
+				<aside>
+					<h3>Front-End Web Developer.</h3>
+					<p>My name's Shannon Draper and I'm a Front-End Web Developer based in Toronto. I enjoy creating beautiful, responsive websites and collaborating with like-minded devs. When I'm not coding you can find me mentoring at a LadiesLearningCode workshop, or watching online tutorials to improve my skills in web development and graphic design.</p>
+				</aside>
 			</div>
 		</div><!-- closes headerContainer-->
-	</section>
+	</header>
 
-	<section class="about">
+	<section class="about" id="about">
+		<div class="subHeading">
+			<h2>WHAT I CAN OFFER</h2>
+		</div>
 		<div class="aboutContainer wrapper">
 			<div class="aboutText">
 				<div class="about-Highlights">
-					<div class=" about-Bio">
-						<h2>ABOUT ME</h2>
-						<h3>Hello! I am Shannon</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus pariatur provident. Culpa, animi quod eius numquam error, nam, alias deserunt veniam repellendus et quisquam, ad perferendis. Magni officia, amet.</p>
-					</div>
 					<article>
-						<h3>Creative Ideas</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus pariatur provident.</p>
+						<img src="public/assets/aboutIcons-01.png" alt="">
+						<div class="aboutInner">
+							<h3>Responsive Design</h3>
+							<p>All projects have been developed for the user's behavior and environment based on screen size, platform and orientation.</p>
+						</div>
 					</article>
 					<article>
-						<h3>Responsive Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus pariatur provident.</p>
+						<img src="public/assets/aboutIcons-02.png" alt="">
+						<div class="aboutInner">
+							<h3>Clean Code</h3>
+							<p>Code is well organized, indented and accompanied by pseudo code for ease of navigation and collaboration.</p>
+						</div>
 					</article>
 					<article>
-						<h3>Pixel Perfect Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus pariatur provident.</p>
+						<img src="public/assets/aboutIcons-03.png" alt="">
+						<div class="aboutInner">
+							<h3>Pixel-Perfect Design</h3>
+							<p>Details down to the pixel are taken into consideration, with special attention on spacing, colour and sizes.</p>
+						</div>
 					</article>
 					<article>
-						<h3>Clean Code</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus pariatur provident.</p>
+						<img src="public/assets/aboutIcons-04.png" alt="">
+						<div class="aboutInner">
+							<h3>Optimization</h3>
+							<p>Assets and code optimized for best browser performance based on load times and bandwidth consumption.</p>
+						</div>
 					</article>
 				</div>
 			</div> <!-- closes aboutText -->
 			<div class="about-img">
-				<img src="http://via.placeholder.com/300x400" alt="">
+				<img src="public/assets/aboutImg.png" alt="">
 			</div>
 		</div><!-- closes aboutContainer -->
 	</section>
 
-	<section class="skills">
+	<section class="skills"  id="skills">
 		<div class="skillsContainer wrapper">
 			<div class="subHeading">
 				<h2>SKILLS</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iste quis, blanditiis rerum, perspiciatis asperiores earum vitae voluptates, enim eveniet fugiat. Corporis impedit natus accusantium omnis.</p>
 			</div>
 			<div class="skills-List">
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-html5-plain-wordmark"></i>
+					<h4>HTML5</h4>
 				</article>
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-css3-plain-wordmark"></i>
+					<h4>CSS3</h4>
 				</article>
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-sass-original"></i>
+					<h4>Sass</h4>
 				</article>
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-javascript-plain"></i>
+					<h4>Javascript</h4>
 				</article>
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-jquery-plain"></i>
+					<h4>JQuery</h4>
 				</article>
 				<article>
-					<img src="#" alt="">
-					<div>
-						<h3>Graphic Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+					<i class="devicon devicon-github-plain"></i>
+					<h4>Github</h4>
+				</article>
+				<article>
+					<img src="public/assets/responsiveIcon.png" alt="">
+					<h4>Responsive Design</h4>
+				</article>
+				<article>
+					<i class="devicon devicon-react-original"></i>
+					<h4>React</h4>
+				</article>
+				<article>
+					<i class="devicon devicon-illustrator-plain"></i>
+					<h4>Adobe Illustrator</h4>
+				</article>
+				<article>
+					<i class="devicon devicon-photoshop-plain"></i>
+					<h4>Adobe Photoshop</h4>
 				</article>
 			</div>
 		</div>
 	</section>
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="portfolioContainer wrapper">
 			<div class="subHeading">
 				<h2>PORTFOLIO</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iste quis, blanditiis rerum, perspiciatis asperiores earum vitae voluptates, enim eveniet fugiat. Corporis impedit natus accusantium omnis facere voluptates dolorum cupiditate.</p>
 			</div>
-			<nav class="portfolio-Nav">
-				<ul>
-					<li>Filter1</li>
-					<li>Filter2</li>
-					<li>Filter3</li>
-					<li>Filter4</li>
-					<li>Filter5</li>
-				</ul>
-			</nav>
-			<div class="portfolio-examples">
+			<div class="portfolioExamples">
 				<div>
 					<article>
+						<a href="https://filter-react-app.firebaseapp.com/" target="_new"><img src="public/assets/filterApp.png" alt="Screenshot of React Application"></a>
+						<!-- <span class="portfolio-Num">01.</span> -->
 						<div>
-							<h3>Name of Project</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eius possimus pariatur provident. Culpa, animi.</p>
+							<h3>Filtergram React.js App</h3>
+							<p>A photo editing application created with React.js and Firebase. The app allows the user to upload a photo of their choice and alter it using CSS filters.</p>
+							<h5>Made with: HTML / CSS / React.js</h5>
+							<button><a href="https://filter-react-app.firebaseapp.com/" target="_new">VIEW LIVE</a></button>
+							<button><a href="https://github.com/shannondraper/ReactApp" target="_new">GITHUB</a></button>
 						</div>
-						<img src="http://via.placeholder.com/450x280" alt="">
-						<span class="portfolio-Num">01</span>
+					</article>
+					<article class="exampleTwo">
+						<a href="http://shannondraper.com/mojo"><img src="public/assets/psdConversion.png"  target="_new" alt="Screenshot of PSD conversion site"></a>
+						<div class="innerExampleTwo">
+							<h3>PSD to HTML Conversion</h3>
+							<p>Converted a single page PSD file to a fully responsive website.</p>
+							<h5>Made with: HTML / CSS / Photoshop</h5>
+							<button><a href="http://shannondraper.com/mojo" target="_new">VIEW LIVE</a></button>
+							<button><a href="https://github.com/shannondraper/TotalEclipseOfTheHeart" target="_new">GITHUB</a></button>
+						</div>
+						<!-- <span class="portfolio-Num numTwo">02.</span> -->
 					</article>
 					<article>
+						<a href="http://totaleclipseofthehe.art/" target="_new"><img src="public/assets/totalEclipse.png" alt=""></a>
+						<!-- <span class="portfolio-Num">03.</span> -->
 						<div>
-							<h3>Name of Project</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eius possimus pariatur provident. Culpa, animi.</p>
+							<h3>Total Eclipse of the Heart JS Game</h3>
+							<p>A Javascript / jQuery quiz based on Bonnie Tyler's hit song, 'Total Eclipse of the Heart'.</p>
+							<h5>Made with: HTML / CSS / Javascript & jQuery</h5>
+							<button><a href="http://totaleclipseofthehe.art/" target="_new">VIEW LIVE</a></button>
+							<button><a href="https://github.com/shannondraper/TotalEclipseOfTheHeart" target="_new">GITHUB</a></button>
 						</div>
-						<img src="http://via.placeholder.com/450x280" alt="">
-						<span class="portfolio-Num">03</span>
-					</article>
-				</div>
-				<div>
-					<article>
-						<div>
-							<h3>Name of Project</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eius possimus pariatur provident. Culpa, animi.</p>
-						</div>
-						<img src="http://via.placeholder.com/450x280" alt="">
-						<span class="portfolio-Num">02</span>
-					</article>
-					<article>
-						<div>
-							<h3>Name of Project</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eius possimus pariatur provident. Culpa, animi.</p>
-						</div>
-						<img src="http://via.placeholder.com/450x280" alt="">
-						<span class="portfolio-Num">04</span>
 					</article>
 				</div>
 			</div>
 		</div><!-- closes portfolioContainer-->
 	</section>
-	<footer class="contact">
+	<footer class="contact" id="contact">
 		<div class="contactContainer wrapper">
 			<div class="subHeading">
-				<h2>GET IN TOUCH</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iste quis, blanditiis rerum, perspiciatis asperiores earum vitae voluptates, enim eveniet fugiat. Corporis impedit natus accusantium omnis facere voluptates dolorum cupiditate.</p>
+				<h2>LET'S STAY IN TOUCH</h2>
+				<p>I'd love to hear from you! Feel free to contact me through social media or send me an email at <a href="mailto:hello@shannondraper.com">hello@shannondraper.com</a></p>
 			</div>
 			<div class="contact-Info">
-				<article>
-					<h3>LET'S TALK</h3>
-					<div>
-						<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-						<div>
-							<p>email: hello@shannondraper.com</p>
-							<p>website: shannondraper.com</p>
-						</div>
-					</div>
-				</article>
-				<article>
-					<h3>CONNECT WITH ME ON SOCIAL MEDIA</h3>
-					<a href="twitter.com/shannondraper"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-					<a href="linkedin.com/in/shannondraper"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-					<a href="behance.net/shannondraper"><i class="fa fa-behance-square fa-lg" aria-hidden="true"></i></a>
-					<a href="mailto:hello@shannondraper.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-				</article>
+				<a href="https://twitter.com/ShannonDraper" target="_new"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				<a href="https://linkedin.com/in/shannondraper" target="_new"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+				<a href="https://medium.com/@ShanDraper" target="_new"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+				<a href="mailto:hello@shannondraper.com" target="_new"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
 			</div>
+		</div>
+		<div class="copyright">
+			<p>Shannon Draper 2017 &copy;</p>
+			<p>Headshot by <a href="http://pamlau.com/">Pam Lau</a></p>
+			
 		</div>
 	</footer>
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

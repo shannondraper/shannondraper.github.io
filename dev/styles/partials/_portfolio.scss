@@ -1,0 +1,130 @@
+// // PORTFOLIO SECTION ////////////////////////////
+
+.portfolioExamples {
+	display: flex; 
+	// justify-content: space-between;
+	flex-direction: column;
+
+
+	article {
+		display: flex;
+		flex-direction: row;
+		margin-top: 80px;
+		width: 100%;
+		justify-content: space-between;
+
+		div {
+			width: 45%;
+			padding: 20px;
+			h3 {
+				color: $green;
+			}
+		}
+		img {
+			box-shadow: 0px 0px 10px $lightGrey;
+			margin: 20px 0;
+			transition: 0.3s all ease;
+			// width: 0%;
+			max-width: 460px;
+			&:hover {
+				box-shadow: 0px 0px 20px $darkGrey;
+			}
+		}
+	}
+	button {
+		background-color: transparent;
+		border: 1.5px solid $green;
+		padding: 5px 15px;
+		margin-right: 10px;
+		transition: 0.3s all ease;
+		a {
+			color: $green;
+
+		}
+		&:hover {
+			background-color: $green;
+			a {
+				color: white;
+			}
+		}
+	}
+	.exampleTwo {
+		.innerExampleTwo {
+			order: -1;
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.portfolioExamples {
+		.exampleTwo {
+			.innerExampleTwo {
+				order: 0;
+			}
+		}
+	}
+	article {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.portfolioExamples {
+		article {
+			flex-direction: column;
+			div {
+				width: 80%;
+				margin: 0 auto;
+			}
+			a {
+				// width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+@media (max-width: 550px) {
+	.portfolioExamples {
+		article {
+			div {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+
+
+
+//KEEP!!!! ////////////////////////////////////////
+
+// .portfolio-Num {
+// 	position: absolute;
+// 	font-size: 15px;
+// 	bottom: 15%;
+// 	right: -9%;
+// 	color: $lightGrey;
+// 	text-align: right;
+// 	&:after {
+// 		content:"";
+// 		border-top: 1px solid $lightGrey;
+// 		margin-top: 5px;
+// 		display: block;
+// 		width: 5rem;	
+// 	}
+// }
+// .numTwo {
+// 	position: absolute;
+// 	font-size: 15px;
+// 	bottom: 15%;
+// 	right: 93%;
+// 	color: $lightGrey;
+// 	text-align: left;
+// }
+
+
+
