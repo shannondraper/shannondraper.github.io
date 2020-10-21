@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,193 +8,161 @@
 	<link rel="icon" type="image/x-icon" href="public/assets/favico.png" />
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Poppins" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet"
+		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
+
 <body>
 	<header class="header">
+		<img class="decoration decoration-abstract" src="/public/assets/decorations/decoration-abstract1.svg" alt="">
+		<img class="decoration decoration-triangle rotate-animation"
+			src="/public/assets/decorations/decoration-triangle.svg" alt="">
 		<div class="headerContainer wrapper" id="home">
-			<nav>
-				<ul>
-					<li class="logo"><!-- <a href="#home"><img src="dev/assets/logo_wt.png" alt="Shannon Logo"></a> --></li>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#skills">SKILLS</a></li>
-					<li><a href="#portfolio">PORTFOLIO</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
 			<div class="headerText">
 				<div class="title">
-					<h1>SHANNON DRAPER</h1>
-					<div class="titleBox"></div>
+					<h1>Shannon<br>Draper</h1>
+					<h1 class="outline">Developer<br>+Designer</h1>
 				</div>
-				<aside>
-					<h3>Front-End Web Developer.</h3>
-					<p>My name's Shannon Draper and I'm a Front-End Web Developer based in Toronto. I enjoy creating beautiful, responsive websites and collaborating with like-minded devs. When I'm not coding you can find me mentoring at a LadiesLearningCode workshop, or watching online tutorials to improve my skills in web development and graphic design.</p>
-				</aside>
+				<nav>
+					<ul>
+						<li><a class="hover-outline hover-about " href="#about">About</a></li>
+						<li><a class="hover-outline hover-skills" href="#skills">Experience</a></li>
+						<li><a class="hover-outline hover-portfolio" href="#portfolio">Skills + Stack</a></li>
+						<li><a class="hover-outline hover-contact" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div><!-- closes headerContainer-->
 	</header>
 
 	<section class="about" id="about">
-		<div class="subHeading">
-			<h2>WHAT I CAN OFFER</h2>
-		</div>
-		<div class="aboutContainer wrapper">
-			<div class="aboutText">
-				<div class="about-Highlights">
-					<article>
-						<img src="public/assets/aboutIcons-01.png" alt="">
-						<div class="aboutInner">
-							<h3>Responsive Design</h3>
-							<p>All projects have been developed for the user's behavior and environment based on screen size, platform and orientation.</p>
-						</div>
-					</article>
-					<article>
-						<img src="public/assets/aboutIcons-02.png" alt="">
-						<div class="aboutInner">
-							<h3>Clean Code</h3>
-							<p>Code is well organized, indented and accompanied by pseudo code for ease of navigation and collaboration.</p>
-						</div>
-					</article>
-					<article>
-						<img src="public/assets/aboutIcons-03.png" alt="">
-						<div class="aboutInner">
-							<h3>Pixel-Perfect Design</h3>
-							<p>Details down to the pixel are taken into consideration, with special attention on spacing, colour and sizes.</p>
-						</div>
-					</article>
-					<article>
-						<img src="public/assets/aboutIcons-04.png" alt="">
-						<div class="aboutInner">
-							<h3>Optimization</h3>
-							<p>Assets and code optimized for best browser performance based on load times and bandwidth consumption.</p>
-						</div>
-					</article>
-				</div>
-			</div> <!-- closes aboutText -->
+		<div class="wrapper flex space-between">
+			<div class="about-text">
+				<h2>About</h2>
+				<p>I'm a Web Developer based out of Toronto, Canada with professional experience in development, design
+					and marketing.</p>
+				<br>
+				<p>I enjoy working on projects from concept to final product.</p>
+			</div>
 			<div class="about-img">
 				<img src="public/assets/aboutImg.png" alt="">
 			</div>
-		</div><!-- closes aboutContainer -->
+		</div>
+		<img class="decoration decoration-diamond rotate-animation"
+			src="/public/assets/decorations/decoration-diamond.svg" alt="">
 	</section>
 
-	<section class="skills"  id="skills">
-		<div class="skillsContainer wrapper">
-			<div class="subHeading">
-				<h2>SKILLS</h2>
-			</div>
-			<div class="skills-List">
-				<article>
-					<i class="devicon devicon-html5-plain-wordmark"></i>
-					<h4>HTML5</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-css3-plain-wordmark"></i>
-					<h4>CSS3</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-sass-original"></i>
-					<h4>Sass</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-javascript-plain"></i>
-					<h4>Javascript</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-jquery-plain"></i>
-					<h4>JQuery</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-github-plain"></i>
-					<h4>Github</h4>
-				</article>
-				<article>
-					<img src="public/assets/responsiveIcon.png" alt="">
-					<h4>Responsive Design</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-react-original"></i>
-					<h4>React</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-illustrator-plain"></i>
-					<h4>Adobe Illustrator</h4>
-				</article>
-				<article>
-					<i class="devicon devicon-photoshop-plain"></i>
-					<h4>Adobe Photoshop</h4>
-				</article>
+	<section class="skills" id="skills">
+		<img class="decoration" src="/public/assets/decorations/outline-skills.svg" alt="">
+		<div class="wrapper">
+			<h2>Skills<br> <span class="outline">+</span>Stack</h2>
+			<div class="skillsContainer flex space-between">
+				<div class="skills-list skills-dev">
+					<img src="/public/assets/decorations/icon-dev.svg" alt="">
+					<h3>Development</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS (SASS, LESS)</li>
+						<li>Javascript / jQuery</li>
+						<li>GatsbyJS (React)</li>
+						<li>Gulp / Grunt</li>
+						<li>Git / Github</li>
+						<li>REST API</li>
+						<li>Accessibility Compliance</li>
+						<li>Responsive Design</li>
+					</ul>
+				</div>
+
+				<div class="skills-list skills-dev">
+					<img src="/public/assets/decorations/icon-design.svg" alt="">
+					<h3>Design</h3>
+					<ul class="skills-design">
+						<li>Adobe Illustrator</li>
+						<li>Adobe Photoshop</li>
+						<li>Adobe InDesign</li>
+					</ul>
+				</div>
+
+				<div class="skills-list skills-dev">
+					<img src="/public/assets/decorations/icon-marketing.svg" alt="">
+					<h3>Marketing</h3>
+					<ul class="skills-marketing">
+						<li>Google Analytics</li>
+						<li>Google Optimize</li>
+						<li>Hubspot CRM</li>
+						<li>Crazyegg</li>
+						<li>Optimonster</li>
+						<li>Jira</li>
+						<li>A/B Testing</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="portfolio" id="portfolio">
 		<div class="portfolioContainer wrapper">
-			<div class="subHeading">
-				<h2>PORTFOLIO</h2>
-			</div>
+			<h2>Projects</h2>
 			<div class="portfolioExamples">
-				<div>
-					<article>
-						<a href="https://filtergram-62c8d.firebaseapp.com/" target="_new"><img src="public/assets/filterApp.png" alt="Screenshot of React Application"></a>
-						<!-- <span class="portfolio-Num">01.</span> -->
-						<div>
-							<h3>Filtergram React.js App</h3>
-							<p>A photo editing application created with React.js and Firebase. The app allows the user to upload a photo of their choice and alter it using CSS filters.</p>
-							<h5>Made with: HTML / CSS / React.js</h5>
-							<button><a href="https://filtergram-62c8d.firebaseapp.com/" target="_new">VIEW LIVE</a></button>
-							<button><a href="https://github.com/shannondraper/ReactApp" target="_new">GITHUB</a></button>
-						</div>
-					</article>
-					<article class="exampleTwo">
-						<a href="http://shannondraper.com/mojo"><img src="public/assets/psdConversion.png"  target="_new" alt="Screenshot of PSD conversion site"></a>
-						<div class="innerExampleTwo">
-							<h3>PSD to HTML Conversion</h3>
-							<p>Converted a single page PSD file to a fully responsive website.</p>
-							<h5>Made with: HTML / CSS / Photoshop</h5>
-							<button><a href="http://shannondraper.com/mojo" target="_new">VIEW LIVE</a></button>
-							<button><a href="https://github.com/shannondraper/TotalEclipseOfTheHeart" target="_new">GITHUB</a></button>
-						</div>
-						<!-- <span class="portfolio-Num numTwo">02.</span> -->
-					</article>
-					<article>
-						<a href="http://totaleclipseofthehe.art/" target="_new"><img src="public/assets/totalEclipse.png" alt=""></a>
-						<!-- <span class="portfolio-Num">03.</span> -->
-						<div>
-							<h3>Total Eclipse of the Heart JS Game</h3>
-							<p>A Javascript / jQuery quiz based on Bonnie Tyler's hit song, 'Total Eclipse of the Heart'.</p>
-							<h5>Made with: HTML / CSS / Javascript & jQuery</h5>
-							<button><a href="http://totaleclipseofthehe.art/" target="_new">VIEW LIVE</a></button>
-							<button><a href="https://github.com/shannondraper/TotalEclipseOfTheHeart" target="_new">GITHUB</a></button>
-						</div>
-					</article>
-				</div>
+				<article>
+					<a href="https://filtergram-62c8d.firebaseapp.com/" target="_new">
+						<img src="public/assets/filterApp.png" alt="Screenshot of React Application">
+					</a>
+					<div>
+						<h3>Filtergram React.js App</h3>
+						<p>A photo editing application created with React.js and Firebase. The app allows the user
+							to upload a photo of their choice and alter it using CSS filters.</p>
+						<h5>Made with: HTML / CSS / React.js</h5>
+						<a class="project-link" href="https://filtergram-62c8d.firebaseapp.com/" target="_new">Demo</a>
+						<a class="project-link" href="https://github.com/shannondraper/ReactApp"
+							target="_new">Github</a>
+					</div>
+				</article>
+				<article>
+					<a href="/mojo" target="_new">
+						<img src="public/assets/psdConversion.png" alt="Screenshot of PSD conversion site">
+					</a>
+					<div>
+						<h3>PSD to HTML Conversion</h3>
+						<p>Converted a single page PSD file to a fully responsive website.</p>
+						<h5>Made with: HTML / CSS / Photoshop</h5>
+						<a class="project-link" href="/mojo" target="_new">Demo</a>
+						<a class="project-link" href="https://github.com/shannondraper/TotalEclipseOfTheHeart"
+							target="_new">Github</a>
+					</div>
+				</article>
+				<article>
+					<a href="http://totaleclipseofthehe.art/" target="_new"><img src="public/assets/totalEclipse.png"
+							alt=""></a>
+					<div>
+						<h3>Total Eclipse of the Heart JS Game</h3>
+						<p>A Javascript / jQuery quiz based on Bonnie Tyler's hit song, 'Total Eclipse of the
+							Heart'.</p>
+						<h5>Made with: HTML / CSS / Javascript & jQuery</h5>
+						<a class="project-link" href="/totalEclipseOfTheHeart/" target="_new">Demo</a>
+						<a class="project-link" href="https://github.com/shannondraper/TotalEclipseOfTheHeart"
+							target="_new">Github</a>
+					</div>
+				</article>
 			</div>
 		</div><!-- closes portfolioContainer-->
 	</section>
 	<footer class="contact" id="contact">
 		<div class="contactContainer wrapper">
 			<div class="subHeading">
-				<h2>LET'S STAY IN TOUCH</h2>
-				<p>I'd love to hear from you! Feel free to contact me through social media or send me an email at <a href="mailto:hello@shannondraper.com">hello@shannondraper.com</a></p>
-			</div>
-			<div class="contact-Info">
-				<a href="https://twitter.com/ShannonDraper" target="_new"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-				<a href="https://linkedin.com/in/shannondraper" target="_new"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-				<a href="https://medium.com/@ShanDraper" target="_new"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
-				<a href="mailto:hello@shannondraper.com" target="_new"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+				<h2>Contact</h2>
+				<p>shan.draper@gmail.com</p>
 			</div>
 		</div>
 		<div class="copyright">
-			<p>Shannon Draper 2017 &copy;</p>
-			<p>Headshot by <a href="http://pamlau.com/">Pam Lau</a></p>
-			
+			<p>Shannon Draper 2020 &copy;</p>
+
 		</div>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
 </body>
+
 </html>

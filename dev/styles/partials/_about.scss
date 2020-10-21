@@ -1,63 +1,31 @@
 .about {
-	.subHeading {
-		margin-bottom: 60px;
+	height   : 100vh;
+	position : relative;
+	.decoration-diamond {
+		left   : -40px;
+		bottom : 0;
+		width  : 300px;
+		height : 300px;
 	}
 }
-.aboutContainer {
-	display: flex;
-	justify-content: space-between;
+.about .wrapper {
+	padding : 100px 0;
 }
-.aboutText {
-	width: 65%;
-}
-
-.about-Highlights {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	article {
-		width: 45%;
-		margin-bottom: 40px;
+.about-text {
+	width : 40%;
+	h2 {
+		position : relative;
+		&::after {
+			position : absolute;
+			content  : url('/public/assets/decorations/outline-about.svg');
+			width    : 700px;
+			left     : -200px;
+			top      : -100px;
+		}
 	}
 }
 .about-img {
-	width: 30%;
-	align-items: center;
-}
-
-@media (max-width: 940px) {
-	.about-img {
-		display: none;
-	}
-	.aboutText {
-		width: 90%;
-		// border: 2px solid blue;
-		margin: 0 auto;
-	}
-	.about-Highlights {
-		article {
-			width: calc(50% - 60px);
-			margin: 0;
-		}
-	}
-}
-@media (max-width: 767px) {
-	.aboutText {
-		margin: 0 auto;
-	}
-	.about-Highlights {
-		flex-direction: column;
-		// border: 2px solid  blue;
-		align-items: center;
-		article {
-			width: 85%;
-			display: flex;
-			margin-top: 40px;
-			img {
-				margin-right: 40px;
-				height: 50px;
-				max-width: 50px;
-			}
-		}
-	}
+	width       : 30%;
+	align-items : center;
+	filter      : saturate(0);
 }

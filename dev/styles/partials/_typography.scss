@@ -4,29 +4,35 @@ $purple: #ADA3CE;
 $green: #3BA590;
 
 
+
 h1 {
 	margin: 0;
 	color: $darkGrey;
 	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
+	font-family: WichitaRegular;
 	font-weight: 200;
+	font-size: 75px;
+	&.outline {
+		font-size: 62px;
+	}
 }
 h2 {
 	margin: 0;
 	color: $darkGrey;
 	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
+	font-family: WichitaRegular;
 	font-weight: 500;
+	font-size: 70px;
 }
 h3 {
 	margin: 0;
 	color: $darkGrey;
-	font-family: 'Poppins', sans-serif;
+	font-family: WichitaRegular;
 }
 h4 {
 	margin: 0;
 	color: $darkGrey;
-	font-family: 'Poppins', sans-serif;
+	font-family: WichitaRegular;
 	color: $lightGrey;
 }
 h5 {
@@ -40,4 +46,7 @@ p {
 	margin: 0;
 	color: $lightGrey;
 	font-family: 'Poppins', sans-serif;
+}
+.outline {
+	font-family: WichitaOutline;
 }

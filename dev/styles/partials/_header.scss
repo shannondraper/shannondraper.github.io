@@ -1,157 +1,56 @@
-.header {
-	background-size: cover;
-	height: 100vh;
-	background-color: #ECECEC;
-	background-image: url(../../../public/assets/header-bg.png);
-	nav ul {
-		font-family: 'Poppins', sans-serif;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0;
-		padding: 20px 0;
 
-		li.logo {
-			flex-grow: 1;
-			padding: 0;
-		}
-	}
-}
+
 .header {
-	li {
-		padding: 0 0 0 25px;
-		letter-spacing: 0.7px;
-		a {
-			color: #3BA590;
-			transition: 0.3s all ease;
-			&:hover {
-				border-bottom: 1px solid #3BA590;
-				padding-bottom: 5px;
-			}
-		}
-	}
-}
-.headerText {
-	display: flex;
-	height: 74vh;
-	align-items: center;
-	margin: 2%;
-	h3 {
-		color: #3BA590;
-	}
-}
-.title {
-	display: inline-block;
-	text-align: right;
-	height: 250px;
 	position: relative;
-	
-	h1 {
-		color: #212121;
-		font-size: 50px;
-		letter-spacing: 3px;
-		line-height: 58px;
-		margin-left: 30px;
-		position: absolute;
-		text-shadow: 4px 0px 15px rgba(150, 150, 150, 0.9);
-		top: 50px;
-		left: 80px;
-		&:after {
-			content:"";
-			border-top: 2px solid #212121;
-			margin-top: 30px;
-			margin-left: 214px;
-			display: block;
-			width: 6rem;	
-		}
-	}
-	//white div behind h1
-	.titleBox {
-		width: 350px;
-		height: 100%;
-		background-color: rgba(255,255,255,0.5);
-		box-shadow: 0 0 15px #d6d6d6;
-
-	}
-}
-
-header {
-	aside {
-		text-align: left;
-		width: 60%;
-		padding-left: 150px;
-
-	}
-}
-
-
-@media (max-width: 940px) {
 	.headerText {
-		flex-direction: column;
-		margin: 5% 0 0 0;
-		h1 {
-			color: #212121;
-			font-size: 50px;
-			letter-spacing: 3px;
-			line-height: 58px;
-			margin-left: 0px;
-			position: absolute;
-			text-shadow: 4px 0px 19px rgba(150, 150, 150, 0.7);
-			top: 50px;
-			left: 0px;
-			text-align: center;
-			&:after {
-				content:"";
-				border-top: 2px solid #212121;
-				margin-top: 10px;
-				margin-left: calc(50% - 2.5rem);
-				display: block;
-				width: 5rem;	
-			}
+		height          : 100vh;
+		display         : flex;
+		justify-content : space-between;
+		align-items     : center;
+	}
+	nav ul {
+		text-align  : right;
+		font-family : WichitaRegular;
+		font-size   : 28px;
+		line-height : 2;
+	}
+	.hover-outline {
+		position: relative;
+		transition: 0.2s all ease;
+		&::after {
+			position    : absolute;
+			display     : inline-block;
+			transition  : 0.3s all ease;
+			font-family : WichitaOutline;
+			left        : -15px;
+			top         : -35px;
+			font-size   : 34px;
+			opacity     : 0;
+			color: red;
+		}
+		&.hover-portfolio::after { width : 315px; }
+		&:hover::after {
+			opacity : 1;
 		}
 	}
-
-	header {
-		aside {
-			text-align: left;
-			width: 80%;
-			padding-left: 0px;
-			padding-top: 60px;
-		}
-	}
+	.hover-about::after { content : 'about'; }
+	.hover-skills::after { content : 'experience'; }
+	.hover-contact::after { content : 'contact'; }
+	.hover-portfolio::after { content : 'skills + stack'; }
 }
-@media (max-width: 480px) {
-	.header {
-		height: 120vh;
-	}
-	header {
-		.titleBox {
-			max-height: 200px;
-		}
-	}
-	.header nav ul {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		li.logo {
-			display: none;
-		}
-		a {
-			color: #3BA590;
-			line-height: 25px;
-			&:hover {
-				border-bottom: 0;
-				padding-bottom: 0px;
-			}
-		}
-	}
 
-	header {
-		aside {
-			text-align: left;
-			width: 80%;
-			padding-left: 0px;
-			padding-top: 15px;
-		}
+.decoration {
+	position: absolute;
+	&.decoration-abstract {
+		left: 0;
+		top: 0;
+		width: 470px;
+		height: 260px;
+	}
+	&.decoration-triangle {
+		right: 0;
+		bottom: -100px;
+		width: 270px;
+		height: 270px;
 	}
 }
