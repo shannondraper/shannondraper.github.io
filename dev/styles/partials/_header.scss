@@ -14,29 +14,6 @@
 		font-size   : 28px;
 		line-height : 2;
 	}
-	.hover-outline {
-		position: relative;
-		transition: 0.2s all ease;
-		&::after {
-			position    : absolute;
-			display     : inline-block;
-			transition  : 0.3s all ease;
-			font-family : WichitaOutline;
-			left        : -15px;
-			top         : -35px;
-			font-size   : 34px;
-			opacity     : 0;
-			color: red;
-		}
-		&.hover-portfolio::after { width : 315px; }
-		&:hover::after {
-			opacity : 1;
-		}
-	}
-	.hover-about::after { content : 'about'; }
-	.hover-skills::after { content : 'experience'; }
-	.hover-contact::after { content : 'contact'; }
-	.hover-portfolio::after { content : 'skills + stack'; }
 }
 
 .decoration {
@@ -52,5 +29,12 @@
 		bottom: -100px;
 		width: 270px;
 		height: 270px;
+	}
+	&.decoration-plus {
+		right: -60px;
+		top: -100px;
+		width: 330px;
+		height: 330px;
+
 	}
 }
