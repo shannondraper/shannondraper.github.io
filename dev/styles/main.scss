@@ -4,9 +4,10 @@
 	src: url('../../fonts/WichitaRegular.woff') format("woff");
 }
 @font-face { 
-	font-family: WichitaOutline;
-	src: url('../../fonts/WichitaOutline.woff') format("woff");
+	font-family: GeorgiaBoldItalic;
+	src: url('../../fonts/GeorgiaBoldItalic.ttf') format("truetype");
 }
+@import './partials/colors';
 @import './partials/setup';
 @import './partials/typography';
 @import './partials/header';
@@ -21,6 +22,11 @@
 }
 html {
 	font-size: 14px;
+}
+header,
+section,
+footer {
+	margin : 12px;
 }
 a {
 	text-decoration: none;
@@ -39,19 +45,12 @@ img {
 	margin: 0 auto;
 }
 section {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 ul {
 	list-style-type: none;
 	margin: 0;
 }
-
-.subHeading {
-	max-width  : 770px;
-	margin     : 0 auto;
-	text-align : center;
-}
-
 
 .flex {
 	display : flex;
@@ -61,13 +60,44 @@ ul {
 }
 
 // CONTACT SECTION ////////////////////////////
+.contact {
+	position: relative;
+	.subHeading {
+		width: 60%;
+	}
+	background: $navy;
+	h2 {
+		color: $pink;
+	}
+	h3 {
+		color     : $paleBlue;
+		margin    : 10px 0;
+		font-size : 24px;
+		&:nth-of-type(2) {
+			margin-top: 40px;
+		}
+	}
+	p,
+	a {
+		color: white;
+	}
+	a {
+		text-decoration: underline;
+	}
+	img {
+		position : absolute;
+		right    : 150px;
+		top      : 90px;
+		width    : 200px;
+	}
+}
 .contactContainer {
-	padding : 100px 0;
+	padding : 150px 0;
+	align-items: center;
 }
 
 .copyright {
-	padding : 20px;
-	color   : #333;
+	padding : 0 10px 10px 10px;
 }
 .rotate-animation {
 	animation: rotate 100s linear infinite; 

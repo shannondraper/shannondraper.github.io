@@ -1,40 +1,13 @@
-
-
 .header {
-	position: relative;
-	.headerText {
-		height          : 100vh;
-		display         : flex;
-		justify-content : space-between;
-		align-items     : center;
+	background: $pink;
+	height          : 80vh;
+	display         : flex;
+	align-items     : center;
+	h1 {
+		text-align : center;
 	}
-	nav ul {
-		text-align  : right;
-		font-family : WichitaRegular;
-		font-size   : 28px;
-		line-height : 2;
-	}
-}
-
-.decoration {
-	position: absolute;
-	&.decoration-abstract {
-		left: 0;
-		top: 0;
-		width: 470px;
-		height: 260px;
-	}
-	&.decoration-triangle {
-		right: 0;
-		bottom: -100px;
-		width: 270px;
-		height: 270px;
-	}
-	&.decoration-plus {
-		right: -60px;
-		top: -100px;
-		width: 330px;
-		height: 330px;
-
+	img {
+		width      : 100%;
+		max-width  : 450px;
 	}
 }

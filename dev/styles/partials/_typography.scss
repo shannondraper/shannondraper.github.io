@@ -1,15 +1,7 @@
-$darkGrey: #212121;
-$lightGrey: #7c7c7c;
-$purple: #ADA3CE;
-$green: #3BA590;
-
-
-
 h1 {
 	margin: 0;
-	color: $darkGrey;
-	text-transform: uppercase;
-	font-family: WichitaRegular;
+	color: $darkPink;
+	font-family: GeorgiaBoldItalic;
 	font-weight: 200;
 	font-size: 75px;
 	&.outline {
@@ -19,34 +11,33 @@ h1 {
 h2 {
 	margin: 0;
 	color: $darkGrey;
-	text-transform: uppercase;
-	font-family: WichitaRegular;
+	font-family: GeorgiaBoldItalic;
 	font-weight: 500;
-	font-size: 70px;
+	font-size: 60px;
 }
 h3 {
 	margin: 0;
 	color: $darkGrey;
-	font-family: WichitaRegular;
+	font-family: GeorgiaBoldItalic;
 }
 h4 {
 	margin: 0;
 	color: $darkGrey;
-	font-family: WichitaRegular;
+	font-family: GeorgiaBoldItalic;
 	color: $lightGrey;
 }
 h5 {
-	text-transform: uppercase;
 	font-size: 14px;
 	margin: 10px 0;
 	font-weight: 400;
-	color: $lightGrey;
+	color: $darkGrey;
+	font-family: 'Work Sans', sans-serif;
 }
-p {
+p,
+span {
 	margin: 0;
-	color: $lightGrey;
-	font-family: 'Poppins', sans-serif;
+	color: $darkGrey;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
 }
-.outline {
-	font-family: WichitaOutline;
-}
+

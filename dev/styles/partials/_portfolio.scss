@@ -1,6 +1,10 @@
 // // PORTFOLIO SECTION ////////////////////////////
 .projects {
-	position: relative;
+	background: $pink;
+	h2 {
+		color: $cerulean;
+		text-align: center;
+	}
 }
 .projectExamples {
 	display: flex; 
@@ -25,5 +29,7 @@
 	}
 	h3 {
 		margin-bottom: 10px;
+		color: $magenta;
+		font-size: 20px;
 	}
 }
