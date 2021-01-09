@@ -1,14 +1,15 @@
 // // PORTFOLIO SECTION ////////////////////////////
 .projects {
-	background: $pink;
+	background : $pink;
+	padding    : 150px;
 	h2 {
-		color: $cerulean;
-		text-align: center;
+		color      : $cerulean;
+		text-align : center;
 	}
 }
 .projectExamples {
-	display: flex; 
-	justify-content: space-between;
+	display         : flex;
+	justify-content : space-between;
 
 	article {
 		display         : flex;
@@ -24,12 +25,12 @@
 		font-size       : 16px;
 	}
 	img {
-		margin-bottom: 30px;
-		border: 1px solid #dad8d8;
+		margin-bottom : 30px;
+		border        : 1px solid #dad8d8;
 	}
 	h3 {
-		margin-bottom: 10px;
-		color: $magenta;
-		font-size: 20px;
+		margin-bottom : 10px;
+		color         : $cerulean;
+		font-size     : 20px;
 	}
 }

@@ -3,11 +3,49 @@
 	height          : 80vh;
 	display         : flex;
 	align-items     : center;
+	
 	h1 {
 		text-align : center;
+		position   : relative;
+		display    : inline-block;
+		width      : 400px;
 	}
 	img {
-		width      : 100%;
-		max-width  : 450px;
+		width : 100%;
+	}
+	.sparkle {
+		position        : absolute;
+		fill            : none;
+		stroke          : #ea8800;
+		stroke-linecap  : round;
+		stroke-linejoin : round;
+		stroke-width    : 3px;
+	}
+	.sparkle1 {
+		width : 43px;
+		right : -55px;
+		top   : -30px;
+	}
+	.sparkle2 {
+		width  : 30px;
+		left   : -20px;
+		bottom : 50px;
+	}
+	.sparkle-path {
+		stroke-dasharray  : 1000;
+		stroke-dashoffset : 1000;
+		animation         : drawPath 3s linear alternate infinite;
+	  }
+	  
+	  @keyframes drawPath {
+		0% {
+			stroke-dashoffset: 1000;
+		}
+		20% {
+			stroke-dashoffset: 1000;
+		}
+		100% {
+			stroke-dashoffset: 0;
+		}
 	}
 }
