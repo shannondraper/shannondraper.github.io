@@ -193,45 +193,129 @@ span {
     text-align: center;
     position: relative;
     display: inline-block;
-    width: 400px; }
+    width: 500px; }
   .header img {
     width: 100%; }
-  .header .sparkle {
-    position: absolute;
-    fill: none;
-    stroke: #ea8800;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3px; }
-  .header .sparkle1 {
-    width: 43px;
-    right: -55px;
-    top: -30px; }
-  .header .sparkle2 {
-    width: 30px;
-    left: -20px;
-    bottom: 50px; }
-  .header .sparkle-path {
+  .header .path-navy {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    -webkit-animation: draw-path-navy 2s cubic-bezier(1, 0, 0.84, 0.34) forwards;
+            animation: draw-path-navy 2s cubic-bezier(1, 0, 0.84, 0.34) forwards; }
+  .header .path-magenta {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    -webkit-animation: draw-path-magenta 2s cubic-bezier(1, 0, 0.84, 0.34) forwards;
+            animation: draw-path-magenta 2s cubic-bezier(1, 0, 0.84, 0.34) forwards; }
+  .header .path-pink {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    -webkit-animation: drawPath 3s linear alternate infinite;
-            animation: drawPath 3s linear alternate infinite; }
+    -webkit-animation: draw-path-pink 2s cubic-bezier(1, 0, 0.84, 0.34) forwards;
+            animation: draw-path-pink 2s cubic-bezier(1, 0, 0.84, 0.34) forwards; }
+  .header .path-cerulean {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: draw-path-cerulean 2s cubic-bezier(1, 0, 0.84, 0.34) forwards;
+            animation: draw-path-cerulean 2s cubic-bezier(1, 0, 0.84, 0.34) forwards; }
+  .header .delayed-text {
+    opacity: 0;
+    -webkit-animation: show-delayed-text 3s linear forwards;
+            animation: show-delayed-text 3s linear forwards; }
 
-@-webkit-keyframes drawPath {
+@-webkit-keyframes show-delayed-text {
   0% {
-    stroke-dashoffset: 1000; }
-  20% {
-    stroke-dashoffset: 1000; }
+    opacity: 0; }
+  98% {
+    opacity: 0; }
   100% {
-    stroke-dashoffset: 0; } }
+    opacity: 1; } }
 
-@keyframes drawPath {
+@keyframes show-delayed-text {
   0% {
-    stroke-dashoffset: 1000; }
-  20% {
-    stroke-dashoffset: 1000; }
+    opacity: 0; }
+  98% {
+    opacity: 0; }
   100% {
-    stroke-dashoffset: 0; } }
+    opacity: 1; } }
+
+@-webkit-keyframes draw-path-navy {
+  0% {
+    fill: rgba(30, 25, 80, 0); }
+  95% {
+    fill: rgba(30, 25, 80, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #1e1950; } }
+
+@keyframes draw-path-navy {
+  0% {
+    fill: rgba(30, 25, 80, 0); }
+  95% {
+    fill: rgba(30, 25, 80, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #1e1950; } }
+
+@-webkit-keyframes draw-path-magenta {
+  0% {
+    fill: rgba(246, 102, 114, 0); }
+  95% {
+    fill: rgba(246, 102, 114, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #f66672; } }
+
+@keyframes draw-path-magenta {
+  0% {
+    fill: rgba(246, 102, 114, 0); }
+  95% {
+    fill: rgba(246, 102, 114, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #f66672; } }
+
+@-webkit-keyframes draw-path-pink {
+  0% {
+    fill: rgba(237, 166, 185, 0); }
+  95% {
+    fill: rgba(237, 166, 185, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #eda6b9; } }
+
+@keyframes draw-path-pink {
+  0% {
+    fill: rgba(237, 166, 185, 0); }
+  95% {
+    fill: rgba(237, 166, 185, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #eda6b9; } }
+
+@-webkit-keyframes draw-path-cerulean {
+  0% {
+    fill: rgba(109, 153, 245, 0); }
+  95% {
+    fill: rgba(109, 153, 245, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #6d99f5; } }
+
+@keyframes draw-path-cerulean {
+  0% {
+    fill: rgba(109, 153, 245, 0); }
+  95% {
+    fill: rgba(109, 153, 245, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #6d99f5; } }
 
 .about {
   background: #FFA195; }

@@ -8,44 +8,135 @@
 		text-align : center;
 		position   : relative;
 		display    : inline-block;
-		width      : 400px;
+		width      : 500px;
 	}
 	img {
 		width : 100%;
 	}
-	.sparkle {
-		position        : absolute;
-		fill            : none;
-		stroke          : #ea8800;
-		stroke-linecap  : round;
-		stroke-linejoin : round;
-		stroke-width    : 3px;
-	}
-	.sparkle1 {
-		width : 43px;
-		right : -55px;
-		top   : -30px;
-	}
-	.sparkle2 {
-		width  : 30px;
-		left   : -20px;
-		bottom : 50px;
-	}
-	.sparkle-path {
-		stroke-dasharray  : 1000;
-		stroke-dashoffset : 1000;
-		animation         : drawPath 3s linear alternate infinite;
+
+	.path-navy {
+		stroke-dasharray: 1500;
+		stroke-dashoffset: 1500;
+		animation: draw-path-navy 2s cubic-bezier(1,0,.84,.34) forwards;
 	  }
-	  
-	  @keyframes drawPath {
+	  .path-magenta {
+		stroke-dasharray: 1500;
+		stroke-dashoffset: 1500;
+		animation: draw-path-magenta 2s cubic-bezier(1,0,.84,.34) forwards;
+	  }
+	  .path-pink {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: draw-path-pink 2s cubic-bezier(1,0,.84,.34) forwards;
+	  }
+	  .path-cerulean {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: draw-path-cerulean 2s cubic-bezier(1,0,.84,.34) forwards;
+	  }
+	  .delayed-text {
+		opacity: 0;
+		animation: show-delayed-text 3s linear forwards;
+	  }
+	  @keyframes show-delayed-text {
 		0% {
-			stroke-dashoffset: 1000;
+		  opacity: 0;
 		}
-		20% {
-			stroke-dashoffset: 1000;
+		98% {
+		  opacity: 0;
 		}
 		100% {
-			stroke-dashoffset: 0;
+		  opacity: 1;
 		}
-	}
+	  }
+	  
+	  
+	  @keyframes draw-path-navy {
+		0% {
+		  fill: rgba(30,25,80,0);
+		}
+		95% {
+		  fill: rgba(30,25,80,0);
+		  stroke-dashoffset: 0;
+		}
+		100% {
+		  stroke-dashoffset: 0;
+		  fill: rgba(30,25,80,1);
+		}
+	  }
+	  
+	  @keyframes draw-path-magenta {
+		0% {
+		  fill: rgba(246,102,114,0);
+		}
+		95% {
+		  fill: rgba(246,102,114,0);
+		  stroke-dashoffset: 0;
+		}
+		100% {
+		  stroke-dashoffset: 0;
+		  fill: rgba(246,102,114,1);
+		}
+	  }
+	  @keyframes draw-path-pink {
+		0% {
+		  fill: rgba(237,166,185,0);
+		}
+		95% {
+		  fill: rgba(237,166,185,0);
+		  stroke-dashoffset: 0;
+		}
+		100% {
+		  stroke-dashoffset: 0;
+		  fill: rgba(237,166,185,1);
+		}
+	  }
+	  @keyframes draw-path-cerulean {
+		0% {
+		  fill: rgba(109,153,245,0);
+		}
+		95% {
+		  fill: rgba(109,153,245,0);
+		  stroke-dashoffset: 0;
+		}
+		100% {
+		  stroke-dashoffset: 0;
+		  fill: rgba(109,153,245,1);
+		}
+	  }
+	// .sparkle {
+	// 	position        : absolute;
+	// 	fill            : none;
+	// 	stroke          : #ea8800;
+	// 	stroke-linecap  : round;
+	// 	stroke-linejoin : round;
+	// 	stroke-width    : 3px;
+	// }
+	// .sparkle1 {
+	// 	width : 43px;
+	// 	right : -55px;
+	// 	top   : -30px;
+	// }
+	// .sparkle2 {
+	// 	width  : 30px;
+	// 	left   : -20px;
+	// 	bottom : 50px;
+	// }
+	// .sparkle-path {
+	// 	stroke-dasharray  : 1000;
+	// 	stroke-dashoffset : 1000;
+	// 	animation         : drawPath 3s linear alternate infinite;
+	//   }
+	  
+	//   @keyframes drawPath {
+	// 	0% {
+	// 		stroke-dashoffset: 1000;
+	// 	}
+	// 	20% {
+	// 		stroke-dashoffset: 1000;
+	// 	}
+	// 	100% {
+	// 		stroke-dashoffset: 0;
+	// 	}
+	// }
 }
