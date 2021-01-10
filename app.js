@@ -24,16 +24,15 @@ app.use('/assets', express.static(__dirname + 'views/totalEclipseOfTheHeart/asse
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-app.get('', (req, res) => {
-    res.render('index');
-});
 app.get('/mojo', (req, res) => {
     res.render('mojo/index');
 });
 app.get('/totaleclipseoftheheart', (req, res) => {
     res.render('totalEclipseOfTheHeart/index');
 });
-
+app.get('', (req, res) => {
+    res.render('index');
+});
 
 // Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`));
