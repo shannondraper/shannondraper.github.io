@@ -218,8 +218,8 @@ span {
             animation: draw-path-cerulean 2s cubic-bezier(1, 0, 0.84, 0.34) forwards; }
   .header .delayed-text {
     opacity: 0;
-    -webkit-animation: show-delayed-text 3s linear forwards;
-            animation: show-delayed-text 3s linear forwards; }
+    -webkit-animation: show-delayed-text 2.5s linear forwards;
+            animation: show-delayed-text 2.5s linear forwards; }
 
 @-webkit-keyframes show-delayed-text {
   0% {
