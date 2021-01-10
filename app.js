@@ -16,6 +16,10 @@ app.use('/css', express.static(__dirname + 'views/mojo/css'));
 app.use('/assets', express.static(__dirname + 'views/mojo/assets'));
 app.use('/icofont', express.static(__dirname + 'views/mojo/icofont'));
 
+app.use(express.static('views/totalEclipseOfTheHeart'));
+app.use('/style', express.static(__dirname + 'views/totalEclipseOfTheHeart/style'));
+app.use('/assets', express.static(__dirname + 'views/totalEclipseOfTheHeart/assets'));
+
 // Set Views
 app.set('views', './views');
 app.set('view engine', 'ejs');
@@ -25,6 +29,9 @@ app.get('', (req, res) => {
 });
 app.get('/mojo', (req, res) => {
     res.render('mojo/index');
+});
+app.get('/totaleclipseoftheheart', (req, res) => {
+    res.render('totalEclipseOfTheHeart/index');
 });
 
 
