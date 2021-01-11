@@ -1,11 +1,11 @@
 
 @font-face { 
 	font-family: WichitaRegular;
-	src: url('../../fonts/WichitaRegular.woff') format("woff");
+	src: url('../fonts/WichitaRegular.woff') format("woff");
 }
 @font-face { 
 	font-family: GeorgiaBoldItalic;
-	src: url('../../fonts/GeorgiaBoldItalic.ttf') format("truetype");
+	src: url('../fonts/GeorgiaBoldItalic.ttf') format("truetype");
 }
 @import './partials/colors';
 @import './partials/setup';

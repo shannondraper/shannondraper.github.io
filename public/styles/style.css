@@ -1,10 +1,10 @@
 @font-face {
   font-family: WichitaRegular;
-  src: url("../../fonts/WichitaRegular.woff") format("woff"); }
+  src: url("../fonts/WichitaRegular.woff") format("woff"); }
 
 @font-face {
   font-family: GeorgiaBoldItalic;
-  src: url("../../fonts/GeorgiaBoldItalic.ttf") format("truetype"); }
+  src: url("../fonts/GeorgiaBoldItalic.ttf") format("truetype"); }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
