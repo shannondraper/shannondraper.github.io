@@ -1,0 +1,50 @@
+.experience {
+    background : $pink;
+    h2 {
+        text-align : right;
+        color      : $navy;
+    }
+    h3 {
+        font-size : 20px;
+        margin    : 10px 0;
+        color     : $magenta;
+    }
+    h4 {
+        color       : $navy;
+        font-size   : 16px;
+        margin      : 5px 0;
+        font-family : 'Work Sans';
+        font-weight : 600;
+    }
+    .job-history {
+        width        : 65%;
+        border-left  : 3px solid $magenta;
+        padding-left : 70px;
+        .job,
+        .school {
+            margin   : 40px 0;
+            position : relative;
+            &::before {
+                position : absolute;
+                left     : -92px;
+                top      : -5px;
+            }
+        }
+        .job::before {
+            content : url('../../../public/assets/icon-job.svg');
+            width   : 40px;
+        }
+        .school::before {
+            content : url('../../../public/assets/icon-school.svg');
+            width   : 45px;
+        }
+    }
+    ul {
+        list-style-type : disc;
+        padding-left    : 20px;
+    }
+    li,
+    p {
+        line-height : 1.4;
+    }
+}
