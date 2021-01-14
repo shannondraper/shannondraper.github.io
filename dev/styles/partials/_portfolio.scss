@@ -3,31 +3,30 @@
 	background : $paleBlue;
 	padding    : 120px 0 150px 0;
 	h2 {
-		color      : white;
-		text-align : center;
-		margin-bottom: 50px;
+		color         : white;
+		text-align    : center;
+		margin-bottom : 50px;
 	}
 }
 .projectExamples {
 	display         : flex;
 	justify-content : space-between;
-	flex-direction: column;
+	flex-wrap       : wrap;
 
 	article {
-		display : flex;
-		padding: 30px 0;
-		justify-content: space-between;
-		& > a {
-			width: 30%;
+		display        : flex;
+		flex-direction : column;
+		width          : 31%;
+		margin-bottom  : 50px;
+		img {
+			width : 100%;
+			max-width : 300px;
 		}
-		.project-description {
-			width: 40%;
-		}
-		.made-with {
-			width: 20%;
-		}
+		ul {
+			padding-left : 0;
+		}		
 		li {
-			padding: 2px 0;
+			padding : 2px 0 0 10px;
 		}
 	}
 	.project-link {
@@ -37,13 +36,9 @@
 		padding         : 10px 10px 10px 0;
 		font-size       : 16px;
 	}
-	img {
-		max-width: 300px;
-		border        : 1px solid #dad8d8;
-	}
 	h3 {
-		margin-bottom : 10px;
-		color         : white;
-		font-size     : 20px;
+		margin    : 15px 0 10px 0;
+		color     : white;
+		font-size : 20px;
 	}
 }

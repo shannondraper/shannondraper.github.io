@@ -1,0 +1,92 @@
+header {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	border: 2px solid red;
+	.headerContent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	h2 {
+		color: #1F6D9E;
+		background-color: #fff;
+		padding: 0 5px;
+		font-weight: 400;
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+	
+	 button.aboutThisProject {
+	 	border: 0;
+	 	background-color: transparent;
+	 	color: white;
+	 	text-decoration: underline;
+	 	text-transform: uppercase;
+	 	letter-spacing: 1px;
+	 	display: block;
+	 	padding: 0;
+	 }
+	 .projectDetails {
+	 	background-color: rgba(0,0,0,0.6);
+	 	// padding: 200px 300px;
+	 	z-index: 10;
+	 	position: absolute;
+	 	top: 0;
+	 	left: 0;
+	 	right: 0;
+	 	bottom: 0;
+	 	.projectContent {
+	 		height: 100%;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 		.projectDetailsWrapper {
+	 			display: flex;
+	 			flex-direction: column;
+	 			font-size: 18px;
+	 			max-width: 50%;
+	 			p {
+	 				text-transform: none;
+	 				padding-bottom: 20px;
+	 			}
+	 			button {
+	 				align-self: flex-end;
+	 				margin-bottom: 40px;
+	 				border: 0;
+	 				background-color: transparent;
+	 				color: white;
+	 				text-transform: uppercase;
+	 				letter-spacing: 2px;
+	 			}
+	 			
+	 		}	
+	 	}
+	 }
+	 button {
+	 	margin-bottom: 7px;
+	 	&:hover {
+	 		cursor: pointer;
+	 		color: #43cea2;
+	 	}
+	 }
+	 a {
+	 	color: white;
+	 	transition: 0.3s all ease;
+	 	&:hover {
+	 		color: #185a9d;
+	 	}
+	 }
+ 	.dotted {
+	margin-top: 10px;
+	padding: .55em 1.6875em;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(255,255,255,.2), rgba(255,255,255,.2) 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 3px 3px;
+	-moz-background-size: 3px 3px;
+	background-size: 3px 3px;
+	}
+}

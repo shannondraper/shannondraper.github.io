@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Show Me The Weather</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/weather-icons-master/css/weather-icons.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/styles/style.css">
+</head>
+
+<body>
+	<!-- <div class="settings">
+		<div>
+			<label class="switch hour-switch">
+				<input type="checkbox" id="hour-switch">
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div>
+			<label class="switch degree-switch">
+				<input type="checkbox" id="degree-switch">
+				<span class="slider round"></span>
+			</label>
+		</div>
+	</div> -->
+	<div class="wrapper">
+		<header>
+			<div class="headerContent">
+				<div class="headerInfo">
+					<div class="cityName clearData"></div>
+					<div class="dateAndTime clearData"></div>
+					<div>
+						<h3 id="clock"></h3>
+					</div>
+				</div>
+
+				<div class="headerAbout">
+					<div>
+						<p class="sunriseTime"></p>
+						<p class="sunsetTime"></p>
+					</div>
+					<!-- <button class="aboutThisProject">About This Project</button>
+					<div class="projectDetails hide">
+						<div class="projectContent">
+							<div class="projectDetailsWrapper">
+								<button class="close"><i class="fa fa-window-close fa-lg" aria-hidden="true"></i></button>
+								<p>This weather application is powered by the Dark Sky API. Data is pulled in with an AJAX request and appended to the HTML using JavaScript and jQuery.</p>
+								<p>Weather icons are from <a href="https://erikflowers.github.io/weather-icons/">WeatherIcons.io</a> and are determined using if...else statements based on API data. All design choices are my own.</p>
+								<p>Visit my <a href="http://github.com/shannondraper">Github</a> page to view the code!</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="dotted"></div>
+		</header>
+
+		<section class="currentWeather">
+			<div class="today">
+				<div class="todaySummary">
+					<div>
+						<article class="currentTemp">
+							<h3>Current Temp.</h3>
+							<div class="mainTemp clearData"></div>
+							<div class="lowHighTemp clearData"></div>
+						</article>
+						<article class="currentIcon">
+							<div id="loader">
+								<img src="assets/loader.svg" alt="animated loading gif">
+							</div>
+							<div class="iconContainer"></div>
+							<div class="iconSummary clearData"></div>
+						</article>
+					</div>
+					<div>
+						<article class="currentDescription clearData"></article>
+					</div>
+				</div>
+				<div class="todayData">
+					<article class="feelsLike">
+						<h3>Feels Like</h3>
+					</article>
+					<article class="humidity">
+						<h3>Humidity</h3>
+					</article>
+					<article class="pop">
+						<h3>P.O.P.</h3>
+					</article>
+				</div>
+			</div>
+			<div class="tomorrow">
+				<article class="tomorrowTemp">
+					<h3>Tomorrow</h3>
+				</article>
+				<article class="tomorrowIcon clearData">
+				</article>
+				<article class="tomorrowSummary clearData">
+				</article>
+			</div><!-- closes .tomorrow div -->
+		</section><!-- closes .currentWeather section -->
+
+		<section class="forecast">
+			<div class="forecastTitle">
+				<h3>Forecast</h3>
+			</div>
+			<div class="forecastWeek">
+				<article class="forecastOne forecastDay">
+					<div class="dateOneDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastOneData forecastData hide">
+						<div class="forecastOneData_Container foreOuterContainer">
+							<div class="forecastOneData_innerContainer foreInnerContainer">
+								<div class="forecastOneHigh clearData"></div>
+								<div class="forecastOneLow clearData"></div>
+								<div class="forecastOneHumidity clearData"></div>
+								<div class="forecastOnePop clearData"></div>
+							</div>
+							<div class="forecastOneIcon asideIcon"></div>
+						</div>
+						<div class="forecastOneSummary clearData"></div>
+					</aside>
+				</article>
+
+				<article class="forecastTwo forecastDay">
+					<div class="dateTwoDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastTwoData forecastData hide">
+						<div class="forecastTwoData_Container foreOuterContainer">
+							<div class="forecastTwoData_innerContainer foreInnerContainer">
+								<div class="forecastTwoHigh"></div>
+								<div class="forecastTwoLow"></div>
+								<div class="forecastTwoHumidity"></div>
+								<div class="forecastTwoPop"></div>
+							</div>
+							<div class="forecastTwoIcon asideIcon"></div>
+						</div>
+						<div class="forecastTwoSummary"></div>
+					</aside>
+				</article>
+
+				<article class="forecastThree forecastDay">
+					<div class="dateThreeDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastThreeData forecastData hide">
+						<div class="forecastThreeData_Container foreOuterContainer">
+							<div class="forecastThreeData_innerContainer foreInnerContainer">
+								<div class="forecastThreeHigh"></div>
+								<div class="forecastThreeLow"></div>
+								<div class="forecastThreeHumidity"></div>
+								<div class="forecastThreePop"></div>
+							</div>
+							<div class="forecastThreeIcon asideIcon"></div>
+						</div>
+						<div class="forecastThreeSummary"></div>
+					</aside>
+				</article>
+
+				<article class="forecastFour forecastDay">
+					<div class="dateFourDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastFourData forecastData hide">
+						<div class="forecastFourData_Container foreOuterContainer">
+							<div class="forecastFourData_innerContainer foreInnerContainer">
+								<div class="forecastFourHigh"></div>
+								<div class="forecastFourLow"></div>
+								<div class="forecastFourHumidity"></div>
+								<div class="forecastFourPop"></div>
+							</div>
+							<div class="forecastFourIcon asideIcon"></div>
+						</div>
+						<div class="forecastFourSummary"></div>
+					</aside>
+				</article>
+
+				<article class="forecastFive forecastDay">
+					<div class="dateFiveDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastFiveData forecastData hide">
+						<div class="forecastFiveData_Container foreOuterContainer">
+							<div class="forecastFiveData_innerContainer foreInnerContainer">
+								<div class="forecastFiveHigh"></div>
+								<div class="forecastFiveLow"></div>
+								<div class="forecastFiveHumidity"></div>
+								<div class="forecastFivePop"></div>
+							</div>
+							<div class="forecastFiveIcon asideIcon"></div>
+						</div>
+						<div class="forecastFiveSummary"></div>
+					</aside>
+				</article>
+
+				<article class="forecastSix forecastDay">
+					<div class="dateSixDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastSixData forecastData hide">
+						<div class="forecastSixData_Container foreOuterContainer">
+							<div class="forecastSixData_innerContainer foreInnerContainer">
+								<div class="forecastSixHigh"></div>
+								<div class="forecastSixLow"></div>
+								<div class="forecastSixHumidity"></div>
+								<div class="forecastSixPop"></div>
+							</div>
+							<div class="forecastSixIcon asideIcon"></div>
+						</div>
+						<div class="forecastSixSummary"></div>
+					</aside>
+				</article>
+
+				<article class="forecastSeven forecastDay">
+					<div class="dateSevenDay">
+						<!-- append dateZeroDay here-->
+					</div>
+					<aside class="forecastSevenData forecastData hide">
+						<div class="forecastSevenData_Container foreOuterContainer">
+							<div class="forecastSevenData_innerContainer foreInnerContainer">
+								<div class="forecastSevenHigh"></div>
+								<div class="forecastSevenLow"></div>
+								<div class="forecastSevenHumidity"></div>
+								<div class="forecastSevenPop"></div>
+							</div>
+							<div class="forecastSevenIcon asideIcon"></div>
+						</div>
+						<div class="forecastSevenSummary"></div>
+					</aside>
+				</article>
+			</div>
+		</section>
+
+
+		<footer>
+			<div class="contactDarkSky">
+				<a href="https://darksky.net/poweredby/" target="_blank" class="poweredBy">Powered by Dark Sky</a>
+			</div>
+			<div class="contactPersonal">
+				<div class="socialIcons">
+					<span>Shannon Draper &copy; 2021</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="public/scripts/main.js"></script>
+
+</body>
+
+</html>
