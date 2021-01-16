@@ -9,14 +9,15 @@
 	}
 }
 .projectExamples {
-	display         : flex;
-	flex-wrap       : wrap;
+	display   : flex;
+	flex-wrap : wrap;
+	justify-content: space-around;
 	article {
 		display        : flex;
 		flex-direction : column;
 		width          : 48%;
 		position       : relative;
-		margin         : 10px;
+		margin-bottom: 2%;
 		img {
 			width : 100%;
 		}
@@ -27,12 +28,12 @@
 			}
 		}	
 		&:hover {
-			cursor: pointer;
+			cursor : pointer;
 			.project-description {
-				opacity    : 0.8;
+				opacity : 0.8;
 			}
 			img {
-				filter: blur(3px);
+				filter : blur(3px);
 			}
 		}	
 	}
@@ -48,15 +49,13 @@
 		h3, 
 		p,
 		a {
-			color : white;
-			opacity: 1;
+			color   : white;
+			opacity : 1;
 		}
-
-		// display: none;
 	}
 	.button-container {
-		text-align: center;
-		padding: 10px 0;
+		text-align : center;
+		padding    : 10px 0;
 	}
 	.project-link {
 		display    : inline-block;
@@ -66,14 +65,14 @@
 		font-size  : 16px;
 		text-align : center;
 		&:hover {
-			background: white;
-			color: black;
+			background : white;
+			color      : black;
 		}
 	}
 	h3 {
-		margin    : 15px 0 10px 0;
-		color     : white;
-		font-size : 20px;
-		text-align: center;
+		margin     : 15px 0 10px 0;
+		color      : white;
+		font-size  : 20px;
+		text-align : center;
 	}
 }

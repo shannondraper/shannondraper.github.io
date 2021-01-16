@@ -17,7 +17,7 @@
         font-weight : 600;
     }
     .job-history {
-        width        : 65%;
+        width        : 650px;
         border-left  : 3px solid $magenta;
         padding-left : 70px;
         .job,
@@ -46,5 +46,24 @@
     li,
     p {
         line-height : 1.4;
+    }
+
+    @media(max-width: $size-md) {
+        .job-history {
+            width : 100%;
+        }
+    }
+    @media(max-width: $size-sm) {
+        .job-history {
+            width        : 95%;
+            padding-left : 40px;
+            margin-left  : 20px;
+            .job,
+            .school {
+                &::before {
+                    left : -62px;
+                }
+            }
+        }
     }
 }

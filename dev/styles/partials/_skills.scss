@@ -2,12 +2,12 @@
 	background : $navy;
 	padding    : 240px 0;
 	.skillsContainer {
-		position: relative;
+		position : relative;
 	}
 	h2 {
 		margin-bottom : 50px;
-		color: $pink;
-		line-height: 0.9;
+		color         : $pink;
+		line-height   : 0.9;
 	}
 	.trend-arrow {
 		position  : absolute;
@@ -18,10 +18,10 @@
 	h3 {
 		margin    : 10px 0 20px 0;
 		font-size : 24px;
-		color: $pink;
+		color     : $pink;
 	}
 	.skills-lists {
-		width: 60%;
+		width : 60%;
 	}
 	.skills-list img {
 		width : 35px;
@@ -33,6 +33,40 @@
 		font-family : 'Work Sans';
 		font-size   : 16px;
 		padding     : 2px 0;
-		color: white;
+		color       : white;
+	}
+	@media(max-width: $size-lg) {
+		.skillsContainer.flex {
+			flex-direction : column;
+		}
+		.trend-arrow {
+			left      : initial;
+			right     : 0;
+			bottom    : initial;
+			top       : -10%;
+			max-width : 200px;
+		}
+		.skills-lists {
+			width      : 75%;
+			align-self : flex-end;
+		}
+	}
+	@media(max-width: $size-md) {
+		padding : 100px 0;
+		.skills-lists {
+			width : 100%;
+		}
+	}
+	@media(max-width: 600px) {
+		padding: 70px 0;
+		.trend-arrow {
+			display : none;
+		}
+		.skills-lists.flex {
+			flex-direction : column;
+		}
+		.skills-list {
+			margin-bottom : 40px;
+		}
 	}
 }

@@ -164,7 +164,7 @@
             <div class="skillsContainer flex space-between">
                 <h2>
                     skills
-                    <br>+<br>
+                    <br>+ <br class="hidden-lg">
                     stack
                 </h2>
                 <img class="trend-arrow" src="public/assets/trend-arrow.png" alt="">
@@ -217,7 +217,7 @@
                     <a href="https://learn.roadmunk.com" target="_new">
                         <img src="public/assets/project-learning-center.png" alt="">
                     </a>
-                    <div class="project-description">
+                    <!-- <div class="project-description">
                         <h3>Roadmunk Learning Center</h3>
                         <p>A static learning hub blog built with a content management system.</p>
                         <br>
@@ -225,13 +225,13 @@
                         <div class="button-container">
                             <a class="project-link" href="https://learn.roadmunk.com" target="_new">View live</a>
                         </div>
-                    </div>
+                    </div> -->
                 </article>
                 <article>
                     <a href="/mojo" target="_new">
                         <img src="public/assets/project-mojo.png" alt="Screenshot of PSD conversion site">
                     </a>
-                    <div class="project-description">
+                    <!-- <div class="project-description">
                         <h3>PSD Landing Page</h3>
                         <p>PSD file converted to a fully responsive landing page.</p>
                         <br>
@@ -239,12 +239,12 @@
                         <div class="button-container">
                             <a class="project-link" href="/mojo" target="_new">View live</a>
                         </div>
-                    </div>
+                    </div> -->
                 </article>
                 <article>
                     <a href="/totaleclipseoftheheart" target="_new"><img src="public/assets/project-totaleclipse.png"
                             alt=""></a>
-                    <div class="project-description">
+                    <!-- <div class="project-description">
                         <h3>Lyric Quiz</h3>
                         <p>A lyric quiz based on everyone’s favourite karaoke song, Total Eclipse of the Heart.
                         </p>
@@ -253,11 +253,11 @@
                         <div class="button-container">
                             <a class="project-link" href="/totalEclipseOfTheHeart/" target="_new">View live</a>
                         </div>
-                    </div>
+                    </div> -->
                 </article>
                 <article>
                     <a href="/weather-app" target="_new"><img src="public/assets/project-weather-api.png" alt=""></a>
-                    <div class="project-description">
+                    <!-- <div class="project-description">
                         <h3>Weather App</h3>
                         <p>A weather app built with Dark Sky API, showing you real data for Toronto weather.
                         </p>
@@ -265,8 +265,8 @@
                         <p><strong>Made with: </strong>HTML / CSS(SCSS) / jQuery / Javascript / Illustrator / API</p>
                         <div class="button-container">
                             <a class="project-link" href="/weather-app" target="_new">View live</a>
-                        </div>
-                    </div>
+                        </div> 
+                    </div>-->
                 </article>
             </div>
         </div><!-- closes portfolioContainer-->
@@ -330,7 +330,7 @@
     <footer class="contact" id="contact">
         <div class="contactContainer wrapper flex">
             <div class="subHeading">
-                <h2>contact<br>me</h2>
+                <h2>contact <br class="hidden-md">me</h2>
             </div>
             <div class="contactInfo">
                 <h3>email:</h3>
@@ -349,7 +349,18 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="public/scripts/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97115013-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-97115013-1');
+    </script>
+
 </body>
 
 </html>
