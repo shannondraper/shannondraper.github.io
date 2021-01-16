@@ -10,35 +10,70 @@
 }
 .projectExamples {
 	display         : flex;
-	justify-content : space-between;
 	flex-wrap       : wrap;
-
 	article {
 		display        : flex;
 		flex-direction : column;
-		width          : 31%;
-		margin-bottom  : 50px;
+		width          : 48%;
+		position       : relative;
+		margin         : 10px;
 		img {
 			width : 100%;
-			max-width : 300px;
 		}
 		ul {
 			padding-left : 0;
-		}		
-		li {
-			padding : 2px 0 0 10px;
+			li {
+				padding : 2px 0 0 10px;
+			}
+		}	
+		&:hover {
+			cursor: pointer;
+			.project-description {
+				opacity    : 0.8;
+			}
+			img {
+				filter: blur(3px);
+			}
+		}	
+	}
+	.project-description {
+		position   : absolute;
+		background : black;
+		left       : 0;
+		right      : 0;
+		bottom     : 0;
+		top        : 0;
+		padding    : 20px 70px;
+		opacity    : 0;
+		h3, 
+		p,
+		a {
+			color : white;
+			opacity: 1;
 		}
+
+		// display: none;
+	}
+	.button-container {
+		text-align: center;
+		padding: 10px 0;
 	}
 	.project-link {
-		display         : inline-block;
-		margin-top      : 10px;
-		text-decoration : underline;
-		padding         : 10px 10px 10px 0;
-		font-size       : 16px;
+		display    : inline-block;
+		margin-top : 10px;
+		border     : 1px solid white;
+		padding    : 10px 20px;
+		font-size  : 16px;
+		text-align : center;
+		&:hover {
+			background: white;
+			color: black;
+		}
 	}
 	h3 {
 		margin    : 15px 0 10px 0;
 		color     : white;
 		font-size : 20px;
+		text-align: center;
 	}
 }

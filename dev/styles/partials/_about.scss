@@ -1,29 +1,54 @@
 .about {
 	background: $darkPink;
-}
-.about .wrapper {
-	padding : 100px 0;
-	align-items: center;
-}
-.about-text {
-	width : 30%;
-	h2 {
-		margin-bottom: 15px;
-		color: $navy;
+	.wrapper {
+		padding : 100px 0;
+		align-items: center;
 	}
-}
-.about-img {
-	width          : 30%;
-	align-items    : center;
-	mix-blend-mode : multiply;
-	margin-right   : 70px;
-	span {
-		text-align : right;
-		display    : block;
-		font-size  : 14px;
+	.about-text {
+		width : 30%;
+		h2 {
+			margin-bottom: 15px;
+			color: $navy;
+		}
 	}
-	a {
-		text-decoration : underline;
-		text-align      : right;
+	.about-img {
+		width          : 30%;
+		align-items    : center;
+		mix-blend-mode : multiply;
+		// margin-right   : 70px;
+		span {
+			text-align : right;
+			display    : block;
+			font-size  : 14px;
+		}
+		a {
+			text-decoration : underline;
+			text-align      : right;
+		}
+	}
+	
+	@media(max-width: $size-md) {
+		.wrapper {
+			padding : 30px;
+		}
+		.flex {
+			flex-direction : column;
+		}
+		.about-text {
+			width         : 80%;
+			margin-bottom : 30px;
+		}
+	}
+	@media(max-width: $size-sm) {
+		.wrapper {
+			padding : 0;
+			margin  : 0 20px
+		}
+		.about-text {
+			width : 100%;
+		}
+		.about-img {
+			width : 60%;
+		}
 	}
 }

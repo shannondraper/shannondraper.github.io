@@ -1,44 +1,49 @@
 h1 {
-	margin: 0;
-	color: $darkPink;
-	font-family: GeorgiaBoldItalic;
-	font-weight: 200;
-	font-size: 75px;
+	margin      : 0;
+	color       : $darkPink;
+	font-family : GeorgiaBoldItalic;
+	font-weight : 200;
+	font-size   : 75px;
 	&.outline {
-		font-size: 62px;
+		font-size : 62px;
 	}
 }
 h2 {
-	margin: 0;
-	color: $darkGrey;
-	font-family: GeorgiaBoldItalic;
-	font-weight: 500;
-	font-size: 60px;
+	margin      : 0;
+	color       : $darkGrey;
+	font-family : GeorgiaBoldItalic;
+	font-weight : 500;
+	font-size   : 60px;
 }
 h3 {
-	margin: 0;
-	color: $darkGrey;
-	font-family: GeorgiaBoldItalic;
+	margin      : 0;
+	color       : $darkGrey;
+	font-family : GeorgiaBoldItalic;
 }
 h4 {
-	margin: 0;
-	color: $darkGrey;
-	font-family: GeorgiaBoldItalic;
-	color: $lightGrey;
+	margin      : 0;
+	color       : $darkGrey;
+	font-family : GeorgiaBoldItalic;
+	color       : $lightGrey;
 }
 h5 {
-	font-size: 14px;
-	margin: 10px 0;
-	font-weight: 400;
-	color: $darkGrey;
-	font-family: 'Work Sans', sans-serif;
+	font-size   : 14px;
+	margin      : 10px 0;
+	font-weight : 400;
+	color       : $darkGrey;
+	font-family : 'Work Sans', sans-serif;
 }
 p,
 span,
 ul {
-	margin: 0;
-	color: $darkGrey;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 16px;
+	margin      : 0;
+	color       : $darkGrey;
+	font-family : 'Work Sans', sans-serif;
+	font-size   : 16px;
 }
 
+@media(max-width: $size-sm) {
+	h2 {
+		font-size : 50px;
+	}
+}

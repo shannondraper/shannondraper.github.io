@@ -7,6 +7,12 @@
 	font-family: GeorgiaBoldItalic;
 	src: url('../fonts/GeorgiaBoldItalic.ttf') format("truetype");
 }
+
+$size-sm : 500px;
+$size-md : 768px;
+$size-lg : 992px;
+$size-xl : 1200px;
+
 @import './partials/colors';
 @import './partials/setup';
 @import './partials/typography';
@@ -15,7 +21,6 @@
 @import './partials/skills';
 @import './partials/portfolio';
 @import './partials/experience';
-
 
 // GENERAL STYLING ////////////////////////////
 * {
@@ -58,6 +63,9 @@ ul {
 }
 .space-between {
 	justify-content : space-between;
+}
+.space-around {
+	justify-content : space-around;
 }
 .text-center {
 	text-align : center;
