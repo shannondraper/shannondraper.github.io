@@ -407,6 +407,13 @@ ul {
   100% {
     stroke-dashoffset: 0;
     fill: #6d99f5; } }
+  @media (max-width: 500px) {
+    .header .sub-header {
+      top: unset;
+      left: 50%;
+      bottom: -20px;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 .about {
   background: #FFA195; }
