@@ -1,21 +1,20 @@
 .about {
-	background: $darkPink;
+	background : $darkPink;
 	.wrapper {
-		padding : 100px 0;
-		align-items: center;
+		padding     : 100px 0;
+		align-items : center;
 	}
 	.about-text {
 		width : 30%;
 		h2 {
-			margin-bottom: 15px;
-			color: $navy;
+			margin-bottom : 15px;
+			color         : $navy;
 		}
 	}
 	.about-img {
 		width          : 30%;
 		align-items    : center;
 		mix-blend-mode : multiply;
-		// margin-right   : 70px;
 		span {
 			text-align : right;
 			display    : block;
