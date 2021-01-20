@@ -133,6 +133,7 @@
 		}
 	}
 	@media (max-width: $size-sm) {
+		height: 60vh;
 		.sub-header {
 			top       : unset;
 			left      : 50%;

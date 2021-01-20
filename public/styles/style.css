@@ -408,12 +408,14 @@ ul {
     stroke-dashoffset: 0;
     fill: #6d99f5; } }
   @media (max-width: 500px) {
-    .header .sub-header {
-      top: unset;
-      left: 50%;
-      bottom: -20px;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+    .header {
+      height: 60vh; }
+      .header .sub-header {
+        top: unset;
+        left: 50%;
+        bottom: -20px;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
 
 .about {
   background: #FFA195; }
@@ -538,6 +540,8 @@ ul {
     color: #1D184F;
     text-align: center;
     margin-bottom: 50px; }
+  .projects .made-with {
+    padding: 10px 0; }
 
 .projectExamples {
   display: -webkit-box;
@@ -635,6 +639,9 @@ ul {
         position: absolute;
         left: -92px;
         top: -5px; }
+      .experience .job-history .job h4,
+      .experience .job-history .school h4 {
+        font-weight: 600; }
     .experience .job-history .job::before {
       content: url("../../../public/assets/icon-job.svg");
       width: 40px; }
@@ -692,6 +699,9 @@ section {
 ul {
   list-style-type: none;
   margin: 0; }
+
+.fw-600 {
+  font-weight: 600; }
 
 .flex {
   display: -webkit-box;

@@ -29,6 +29,9 @@
                 left     : -92px;
                 top      : -5px;
             }
+            h4 {
+                font-weight: 600;
+            }
         }
         .job::before {
             content : url('../../../public/assets/icon-job.svg');
