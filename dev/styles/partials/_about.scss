@@ -12,12 +12,20 @@
 		}
 	}
 	.about-img {
-		width          : 30%;
-		align-items    : center;
-		mix-blend-mode : multiply;
+		background-image    : url('/public/assets/profile-line-art.svg');
+		background-size     : 240px;
+		background-repeat   : no-repeat;
+		width               : 250px;
+		background-position : center;
+		height              : 300px;
+		align-items         : center;
+		mix-blend-mode      : multiply;
+		position            : relative;
 		span {
 			text-align : right;
-			display    : block;
+			position   : absolute;
+			bottom     : -30px;
+			right      : 0;
 			font-size  : 14px;
 		}
 		a {
@@ -47,7 +55,7 @@
 			width : 100%;
 		}
 		.about-img {
-			width : 60%;
+			width : 100%;
 		}
 	}
 }

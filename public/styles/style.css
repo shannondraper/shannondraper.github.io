@@ -421,14 +421,22 @@ ul {
       margin-bottom: 15px;
       color: #1D184F; }
   .about .about-img {
-    width: 30%;
+    background-image: url("/public/assets/profile-line-art.svg");
+    background-size: 240px;
+    background-repeat: no-repeat;
+    width: 250px;
+    background-position: center;
+    height: 300px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    mix-blend-mode: multiply; }
+    mix-blend-mode: multiply;
+    position: relative; }
     .about .about-img span {
       text-align: right;
-      display: block;
+      position: absolute;
+      bottom: -30px;
+      right: 0;
       font-size: 14px; }
     .about .about-img a {
       text-decoration: underline;
@@ -451,7 +459,7 @@ ul {
     .about .about-text {
       width: 100%; }
     .about .about-img {
-      width: 60%; } }
+      width: 100%; } }
 
 .skills {
   background: #1D184F;
@@ -520,7 +528,7 @@ ul {
   background: #6D99F5;
   padding: 120px 0 150px 0; }
   .projects h2 {
-    color: white;
+    color: #1D184F;
     text-align: center;
     margin-bottom: 50px; }
 
@@ -562,7 +570,7 @@ ul {
     text-align: center; }
     .projectExamples .project-link:nth-of-type(1) {
       margin-right: 15px; }
-    .projectExamples .project-link:hover {
+    .projectExamples .project-link:hover, .projectExamples .project-link:focus {
       outline: 3px dotted white; }
   .projectExamples h3 {
     margin: 25px 0 15px 0;
@@ -602,7 +610,7 @@ ul {
     margin: 10px 0;
     color: #1D184F; }
   .experience h4 {
-    color: #F66672;
+    color: #1D184F;
     font-size: 16px;
     margin: 5px 0;
     font-family: 'Work Sans';

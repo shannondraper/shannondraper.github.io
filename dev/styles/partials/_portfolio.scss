@@ -2,7 +2,7 @@
 	background : $paleBlue;
 	padding    : 120px 0 150px 0;
 	h2 {
-		color         : white;
+		color         : $navy;
 		text-align    : center;
 		margin-bottom : 50px;
 	}
@@ -43,7 +43,8 @@
 		&:nth-of-type(1) {
 			margin-right : 15px;
 		}
-		&:hover {
+		&:hover,
+		&:focus {
 			outline : 3px dotted white;
 		}
 	}
