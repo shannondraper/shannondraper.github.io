@@ -534,7 +534,7 @@ ul {
         margin-bottom: 40px; } }
 
 .projects {
-  background: #6D99F5;
+  background: #f0f1f3;
   padding: 120px 0 150px 0; }
   .projects h2 {
     color: #1D184F;
@@ -559,12 +559,41 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 31%;
-    margin-bottom: 2%; }
+    width: 45%;
+    margin-bottom: 5%; }
+    .projectExamples article h3 {
+      margin-top: 10px; }
+    .projectExamples article .design-tag,
+    .projectExamples article .dev-tag {
+      text-transform: uppercase;
+      display: inline-block;
+      height: 22px;
+      text-align: center;
+      padding: 4px 6px 6px 6px;
+      color: white;
+      border-radius: 3px;
+      top: -30px;
+      left: 0;
+      font-size: 12px;
+      font-family: 'Work Sans';
+      letter-spacing: 0.05rem;
+      font-weight: 500;
+      margin-top: 10px; }
+    .projectExamples article .design-tag {
+      background: #6D99F5; }
+    .projectExamples article .dev-tag {
+      background: #1D184F; }
     .projectExamples article img {
-      width: 100%; }
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
       .projectExamples article img:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px); }
     .projectExamples article ul {
       padding-left: 0; }
       .projectExamples article ul li {
@@ -573,8 +602,8 @@ ul {
     padding-right: 15px; }
   .projectExamples .project-link {
     display: inline-block;
-    padding: 5px 10px;
-    margin-top: 30px;
+    padding: 5px 0;
+    margin-top: 10px;
     font-size: 16px;
     text-decoration: underline;
     outline: 3px dotted transparent;
