@@ -695,6 +695,97 @@ ul {
       .experience .job-history .school::before {
         left: -62px; } }
 
+@font-face {
+  font-family: 'futura';
+  src: url("../../../design/Futura-Book.ttf"); }
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url("../../../design/Futura-Bold.ttf"); }
+
+.design-two-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .design-two-col.urban-jungle section {
+    margin: 0;
+    border: 1px solid #f0f1f3; }
+  .design-two-col .back-button {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: inline-block; }
+  .design-two-col h1,
+  .design-two-col h2 {
+    color: #1D184F; }
+  .design-two-col h1 {
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .design-two-col h2 {
+    margin: 50px 0 10px 0;
+    font-size: 22px; }
+  .design-two-col section {
+    width: 35%;
+    padding: 0; }
+  .design-two-col aside {
+    width: 65%; }
+  .design-two-col .design-description {
+    position: fixed;
+    width: 29%;
+    margin: 10px 3%; }
+    .design-two-col .design-description > div {
+      margin-bottom: 50px; }
+    .design-two-col .design-description p {
+      line-height: 1.4; }
+    .design-two-col .design-description h3 {
+      font-size: 18px; }
+    .design-two-col .design-description h3.space-mono,
+    .design-two-col .design-description h3.sen {
+      font-weight: 700; }
+    .design-two-col .design-description h3.futura {
+      font-family: 'futura-bold', sans-serif; }
+    .design-two-col .design-description .space-mono {
+      font-family: 'Space Mono', monospace; }
+    .design-two-col .design-description .sen {
+      font-family: 'Sen', sans-serif; }
+    .design-two-col .design-description .futura {
+      font-family: 'futura', sans-serif; }
+    .design-two-col .design-description .work-sans {
+      font-family: 'Work Sans', sans-serif; }
+    .design-two-col .design-description p.space-mono,
+    .design-two-col .design-description p.futura {
+      margin-bottom: 15px; }
+    .design-two-col .design-description span {
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 5px;
+      width: 200px;
+      display: inline-block; }
+      .design-two-col .design-description span:nth-of-type(3), .design-two-col .design-description span:last-of-type {
+        color: #212121; }
+      .design-two-col .design-description span:last-of-type {
+        border: 1px solid #212121; }
+  @media (max-width: 1200px) {
+    .design-two-col section,
+    .design-two-col aside {
+      width: 50%; }
+    .design-two-col .design-description {
+      width: 43%; } }
+  @media (max-width: 992px) {
+    .design-two-col {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .design-two-col aside {
+        width: 100%;
+        position: static; }
+      .design-two-col .design-description {
+        width: 94%;
+        position: static; }
+      .design-two-col section {
+        width: 97%; } }
+
 * {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease; }

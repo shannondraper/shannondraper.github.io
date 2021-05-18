@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'futura';
+	src: url('../../../design/Futura-Book.ttf');
+}
+@font-face {
+	font-family: 'futura-bold';
+	src: url('../../../design/Futura-Bold.ttf');
+}
+.design-two-col {
+    display : flex;
+    &.urban-jungle {
+        section {
+            margin: 0;
+            border: 1px solid $offWhite;
+        }
+    }
+    .back-button {
+        text-decoration: underline;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    h1,
+    h2 {
+        color: $navy;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    h2 {
+        margin: 50px 0 10px 0;
+        font-size: 22px;
+    }
+    section {
+        width : 35%;
+        padding: 0;
+    }
+    aside {
+        width : 65%;
+    }
+    .design-description {
+        position : fixed;
+        width    : 29%;
+        margin   : 10px 3%;
+        > div {
+            margin-bottom: 50px;
+        }
+        p {
+            line-height: 1.4;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h3.space-mono,
+        h3.sen {
+            font-weight: 700;
+        }
+        h3.futura {
+            font-family: 'futura-bold', sans-serif;
+        }
+        .space-mono {
+            font-family: 'Space Mono', monospace;
+        }
+        .sen {
+            font-family: 'Sen', sans-serif;
+        }
+        .futura {
+            font-family: 'futura', sans-serif;
+        }
+        .work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+        p.space-mono,
+        p.futura {
+            margin-bottom: 15px;
+        }
+        span {
+            color      : white;
+            text-align : center;
+            padding    : 10px 20px;
+            margin-top : 5px;
+            width      : 200px;
+            display    : inline-block;
+            &:nth-of-type(3),
+            &:last-of-type {
+                color: $darkGrey;
+            }
+            &:last-of-type {
+                border: 1px solid $darkGrey;
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        section,
+        aside {
+            width: 50%;
+        }
+        .design-description {
+            width: 43%;
+        }
+    }
+    @media (max-width: 992px) {
+        flex-direction: column;
+        aside {
+            width: 100%;
+            position: static;
+        }
+        .design-description {
+            width: 94%;
+            position: static;
+        }
+        section {
+            width: 97%;
+        }
+    }
+}
