@@ -277,6 +277,9 @@ ul {
     .header .sub-header .letter:nth-child(18n) {
       -webkit-animation-delay: 0.9s;
               animation-delay: 0.9s; }
+    .header .sub-header .letter:nth-child(19n) {
+      -webkit-animation-delay: 0.95s;
+              animation-delay: 0.95s; }
   .header img {
     width: 100%; }
   .header .path-navy {

@@ -34,7 +34,7 @@
 			opacity   : 0;
 			animation : delayed-letter-drop-down  2.5s linear forwards;
 		}
-		@for $i from 1 through 18 {
+		@for $i from 1 through 19 {
 			.letter:nth-child(#{$i}n) {
 				animation-delay : #{$i * 0.05}s;
 			}
