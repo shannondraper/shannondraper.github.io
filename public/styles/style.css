@@ -492,7 +492,9 @@ ul {
     font-size: 24px;
     color: #F5D7DD; }
   .skills .skills-lists {
-    width: 60%; }
+    width: 60%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .skills .skills-list img {
     width: 35px; }
   .skills .skills-list ul {
@@ -558,12 +560,10 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 45%;
     margin-bottom: 5%; }
+    .projectExamples article > a {
+      width: 45%;
+      margin-right: 5%; }
     .projectExamples article h3 {
       margin-top: 10px; }
     .projectExamples article .design-tag,
@@ -602,7 +602,8 @@ ul {
       .projectExamples article ul li {
         padding: 2px 0 0 10px; }
   .projectExamples .project-description {
-    padding-right: 15px; }
+    padding-right: 15px;
+    width: 50%; }
   .projectExamples .project-link {
     display: inline-block;
     padding: 5px 0;
@@ -618,27 +619,18 @@ ul {
   .projectExamples h3 {
     margin: 25px 0 15px 0;
     font-size: 20px; }
-  @media (max-width: 992px) {
-    .projectExamples {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
-      .projectExamples article {
-        width: 50%;
-        margin-bottom: 5%;
-        padding: 10px; } }
-  @media (max-width: 992px) {
-    .projectExamples {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
-      .projectExamples article {
-        width: 50%;
-        margin-bottom: 40px;
-        padding: 10px; } }
   @media (max-width: 768px) {
     .projectExamples article {
-      width: 100%; }
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .projectExamples article > a,
+      .projectExamples article .project-description {
+        width: 100%; }
+      .projectExamples article > a {
+        margin: 40px 0 10px 0; }
     .projectExamples .project-link {
       margin-top: 15px;
       padding-left: 0; } }
